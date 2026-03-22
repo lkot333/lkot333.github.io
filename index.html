@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Minecraft Menu</title>
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(#5c94fc, #a0d8ff);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    font-weight: bold;
+    color: #3b3b3b;
+    text-shadow: 4px 4px 0 #000;
+}
+
+/* Splash text */
+.splash {
+    position: absolute;
+    top: 120px;
+    left: 60%;
+    transform: rotate(-15deg);
+    color: yellow;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 2px 2px 0 orange, 4px 4px 0 red;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: rotate(-15deg) scale(1); }
+    to   { transform: rotate(-15deg) scale(1.1); }
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.button {
+    background: #7a7a7a;
+    border: 2px solid #000;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: inset -2px -2px 0 #555, inset 2px 2px 0 #aaa;
+}
+
+.button:hover {
+    background: #8a8a8a;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo">MINECRAFT</div>
+<div class="splash">Gargamel plays it!</div>
+
+<div class="menu">
+    <div class="button">Singleplayer</div>
+    <div class="button">Multiplayer</div>
+    <div class="button">Options</div>
+    <div class="button">Quit Game</div>
+</div>
+
+<div class="footer">
+    © Mojang (fan project)
+</div>
+
+</body>
+</html>
