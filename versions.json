@@ -1,0 +1,11 @@
+{
+    "latest": "2.0",
+    "versions": {
+        "2.0": {
+            "game": "https://dobrastrona.infinityfree.me/versions/2.0/game.py"
+        },
+        "1.2": {
+            "game": "https://dobrastrona.infinityfree.me/versions/1.2/game.py"
+        }
+    }
+}
